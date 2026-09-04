@@ -46,15 +46,15 @@
         <div class="foto">
 
             <div class="card">
-                <img src="fotoku2.jpeg" alt="Foto 1">
+                <img src="fotoku2.jpeg" alt="Foto Nabila cantik">
             </div>
 
             <div class="card utama">
-                <img src="fotoku7.jpeg" alt="Foto Nabila">
+                <img src="fotoku7.jpeg" alt="Foto Nabila cantik banget">
             </div>
 
             <div class="card">
-                <img src="fotoku8.jpeg" alt="Foto 3">
+                <img src="fotoku8.jpeg" alt="Foto Nabila cantik banget banget">
             </div>
 
         </div>
