@@ -4,135 +4,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - MyPortofolio</title>
+
+    <title>My Portofolio | Contact</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigasi -->
-    <nav>
-        <div class="container">
-            <div class="logo">MyPortofolio</div>
+    <!-- NAVIGATION -->
+    <header class="top-header">
 
-            <ul class="nav-links">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="active">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <nav class="navbar">
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
+            <div class="container nav-container">
 
-            <h1>Hubungi Saya</h1>
+                <a href="index.html" class="brand">
+                    My<span>Portofolio</span>
+                </a>
 
-            <div class="contact-content">
+                <ul class="nav-menu">
 
-                <div class="contact-info">
-                    <h2>Kontak</h2>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
 
-                    <p>
-                        Jika ingin menghubungi saya, silakan isi formulir
-                        yang tersedia.
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="active">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTACT -->
+    <main>
+
+        <section class="contact-section">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        CONTACT ME
                     </p>
 
-                    <p>
-                        <strong>Email:</strong> nbilapract@email.com
-                    </p>
+                    <h1>
+                        Yuk, Terhubung!
+                    </h1>
 
                     <p>
-                        <strong>Telepon:</strong> 0857-5440-2279
+                        Punya pertanyaan, ingin berdiskusi,
+                        atau sekadar ingin menyapa?
+                        Kamu bisa menghubungi saya melalui
+                        kontak di bawah ini.
                     </p>
+
                 </div>
 
-                <form class="contact-form">
 
-                    <label for="name">Nama</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Masukkan nama"
-                        required
-                    >
+                <div class="contact-content">
 
-                    <label for="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Masukkan email"
-                        required
-                    >
 
-                    <label for="message">Pesan</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="Tulis pesan Anda"
-                        required
-                    ></textarea>
+                    <!-- CONTACT INFORMATION -->
+                    <div class="contact-info">
 
-                    <button type="submit" class="btn">
-                        Kirim Pesan
-                    </button>
 
-                </form>
+                        <div class="contact-card">
+
+                            <div class="contact-icon">
+                                ✉
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Email
+                                </h3>
+
+                                <p>
+                                    Kirim pesan melalui email
+                                    untuk menghubungi saya.
+                                </p>
+
+                                <a href="mailto:nabilapract@email.com">
+                                    nabilapract@email.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+
+                            <div class="contact-icon">
+                                ☎
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Phone
+                                </h3>
+
+                                <p>
+                                    Hubungi saya melalui
+                                    nomor berikut.
+                                </p>
+
+                                <a href="tel:085754402279">
+                                    085754402279
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+
+                            <div class="contact-icon">
+                                GH
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    GitHub
+                                </h3>
+
+                                <p>
+                                    Lihat kode dan berbagai
+                                    hal yang saya kerjakan.
+                                </p>
+
+                                <a href="http://github.com/NabilaPracita">
+                                    GitHub Profile
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+
+                            <div class="contact-icon">
+                                IG
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Instagram
+                                </h3>
+
+                                <p>
+                                    Temukan saya melalui
+                                    Instagram.
+                                </p>
+
+                                <a href="https://www.instagram.com/nblaprct?stkn=MTR3OWU1bWFqN3VqZA%3D%3D&utm_source=qr">
+                                    Instagram Profile
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="contact-message">
+
+                        <div class="message-box">
+
+                            <span class="message-decoration">
+                                ♡
+                            </span>
+
+                            <h2>
+                                Let's Talk!
+                            </h2>
+
+                            <p>
+                                Saya senang bertemu dengan orang
+                                baru, bertukar ide, dan mempelajari
+                                hal-hal baru.
+                            </p>
+
+                            <a
+                                href="mailto:nabilapract@email.com"
+                                class="btn">
+
+                                Kirim Email
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-title">
+
+                <h3>
+                    MyPortofolio ♡
+                </h3>
+
+                <p>
+                    Thank you for visiting my website.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a
+                    href="mailto:nabilapract@email.com"
+                    class="footer-item">
+
+                    <span class="icon">
+                        ✉
+                    </span>
+
+                    <span>
+                        Email
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="tel:080758702279"
+                    class="footer-item">
+
+                    <span class="icon">
+                        ☎
+                    </span>
+
+                    <span>
+                        WhatsApp
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://github.com/"
+                    class="footer-item">
+
+                    <span class="icon">
+                        GH
+                    </span>
+
+                    <span>
+                        GitHub
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://instagram.com/"
+                    class="footer-item">
+
+                    <span class="icon">
+                        IG
+                    </span>
+
+                    <span>
+                        Instagram
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="copyright">
+
+                <p>
+                    &copy; 2026 MyPortofolio. Made with ♡
+                </p>
 
             </div>
 
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-    <div class="footer-content">
-
-        <h3>MyPortofolio</h3>
-
-        <div class="footer-links">
-
-            <a href="mailto:nabilapract@email.com" class="footer-item">
-                <span class="icon">✉</span>
-                <span>Email</span>
-            </a>
-
-            <a href="tel:085754402279" class="footer-item">
-                <span class="icon">☎</span>
-                <span>085754402279</span>
-            </a>
-
-            <a href="https://www.instagram.com/nblaprct?stkn=MTR3OWU1bWFqN3VqZA%3D%3D&utm_source=qr" target="_blank" class="footer-item">
-                <span class="icon">◎</span>
-                <span>Instagram</span>
-            </a>
-
-            <a href="https://github.com/NabilaPracita" target="_blank" class="footer-item">
-                <span class="icon">◉</span>
-                <span>GitHub</span>
-            </a>
-
-        </div>
-
-        <p class="copyright">
-            &copy; 2026 MyPortofolio
-        </p>
-
-    </div>
-</footer>
- <script src="js/main.js"></script>
+    </footer>
 
 </body>
 
 </html>
-
