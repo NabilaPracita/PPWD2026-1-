@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Kartu Ucapan</h1>
+        <div class="form-card">
+            <label for="penerima">Nama Penerima</label>
+            <input
+                type="text"
+                id="penerima"
+                placeholder="Masukkan nama penerima">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" placeholder="Tulis pesan ucapan..."></textarea>
+            <label for="tema">Pilih Tema</label>
+            <select id="tema">
+                <option value="pink">Pink</option>
+                <option value="biru">Biru</option>
+                <option value="hijau">Hijau</option>
+                <option value="ungu">Ungu</option>
+            </select>
+            <div class="buttons">
+                <button id="buatKartu">Buat Kartu</button>
+                <button id="reset" class="reset">Reset</button>
+            </div>
+        </div>
+
+        <div class="preview">
+            <h2>Preview</h2>
+            <div id="kartu" class="kartu pink">
+                <p class="untuk">Untuk:</p>
+                <h3 id="previewPenerima">
+                    Nama Penerima
+                </h3>
+                <p id="previewPesan">
+                    Pesan ucapan akan muncul di sini.
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+
+</body>
+</html>

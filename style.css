@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+h1 {
+    text-align: center;
+    color: #b01c9f;
+    margin-bottom: 20px;
+}
+.form-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+label {
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #b01c9f;
+}
+label:first-child {
+    margin-top: 0;
+}
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+}
+textarea {
+    height: 100px;
+    resize: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #a226b8;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #b01c9f;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.reset {
+    background-color: #777;
+}
+
+.preview {
+    margin-top: 25px;
+}
+.preview h2 {
+    color: #164b6b;
+    margin-bottom: 10px;
+}
+.kartu {
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+.untuk {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.kartu h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.kartu #previewPesan {
+    font-size: 17px;
+    line-height: 1.6;
+}
+.pink {
+    background-color: #ffe5ef;
+    color: #9b3d62;
+}
+.biru {
+    background-color: #e1f0ff;
+    color: #28618c;
+}
+.hijau {
+    background-color: #e2f5e9;
+    color: #35734a;
+}
+.ungu {
+    background-color: #eee3ff;
+    color: #684398;
+}
