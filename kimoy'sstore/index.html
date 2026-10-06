@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Store - Makanan Kucing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<header>
+    <h1>🐱 KIMOY'S Store</h1>
+    <p>Makanan terbaik untuk kucing kesayanganmu</p>
+</header>
+<main>
+    <section class="produk">
+        <h2>Pilih Makanan Kucing</h2>
+        <div class="produk-container">
+            <div class="card">
+                <h3>Whiskas Salmon</h3>
+                <p>Makanan kucing rasa salmon.</p>
+                <strong>Rp7.000</strong>
+                <button type="button" class="tambah" data-nama="Whiskas Salmon" data-harga="7000">Tambah</button>
+            </div>
+            <div class="card">
+                <h3>Royal Canin</h3>
+                <p>Makanan kucing premium.</p>
+                <strong>Rp75.000</strong>
+                <button type="button" class="tambah" data-nama="Royal Canin" data-harga="75000">Tambah</button>
+            </div>
+            <div class="card">
+                <h3>Me-O Tuna</h3>
+                <p>Makanan kucing rasa tuna.</p>
+                <strong>Rp8.000</strong>
+                <button type="button" class="tambah" data-nama="Me-O Tuna" data-harga="8000">Tambah</button>
+            </div>
+        </div>
+    </section>
+    <section class="your-cart">
+        <h2>🛒 Keranjang Belanja</h2>
+        <div id="daftarKeranjang">Belum ada produk.</div>
+        <h3>Total: <span id="totalHarga">Rp0</span></h3>
+        <h3>Diskon: <span id="diskon">Rp0</span></h3>
+        <h3>Total Bayar: <span id="totalBayar">Rp0</span></h3>
+        <button id="checkout" type="button">Checkout</button>
+    </section>
+    <section class="form-pembeli">
+        <h2>👤 Data Pembeli</h2>
+        <form id="formPembeli">
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama">
+            <label>Alamat</label>
+            <input type="text" id="alamat" placeholder="Masukkan alamat">
+            <label>No. HP</label>
+            <input type="text" id="nohp" placeholder="Masukkan nomor HP">
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+        <p id="pesan"></p>
+    </section>
+    <section class="riwayat">
+        <h2>📋 Riwayat Pesanan</h2>
+        <div id="riwayatPesanan">Belum ada pesanan.</div>
+    </section>
+</main>
+<footer>
+    <p>© 2026 KIMOY'S Store 🐱</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4eee8;
+    color: #b40296;
+}
+header {
+    background: #fff5fe;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5d8ce;
+}
+header h1 {
+    color: #b40296;
+    font-size: 26px;
+}
+header p {
+    color: #8b7a71;
+    font-size: 14px;
+}
+main {
+    width: 86%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+section {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 30px;
+    border-radius: 0;
+    box-shadow: none;
+}
+.produk {
+    width: 100%;}
+.produk h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #b40296 ;
+}
+.produk h2::after {
+    content: "  🐾";}
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card {
+    background: white;
+    border-radius: 25px;
+    padding: 30px 22px;
+    border: none;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(63, 53, 48, 0.08);
+    position: relative;
+    min-height: 220px;
+    transition: 0.3s;
+}
+.card::before {
+    content: "CAT FOOD";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #c45d7d;
+    background: #fce7ee;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+.card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 0 15px 30px rgba(63, 53, 48, 0.12);
+}
+.card h3 {
+    padding-top: 25px;
+    font-size: 20px;
+    color: #b40296;
+    margin-bottom: 12px;
+}
+.card p {
+    color: #8b7a71;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.card strong {
+    display: block;
+    color: #c45d7d;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.card button {
+    width: 100%;
+}
+button {
+    border: none;
+    background: #b40296;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #c45d7d;}
+/* KERANJANG */
+.keranjang {
+    position: sticky;
+    bottom: 15px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(63, 53, 48, 0.15);
+    border: 1px solid #eaded5;
+}
+.keranjang h2 {
+    color: #b40296;
+    margin-bottom: 18px;
+}
+
+#daftarKeranjang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 45px;
+    margin-bottom: 20px;
+}
+
+#daftarKeranjang p {
+    background: #f7eee9;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.keranjang h3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #76665e;
+    font-size: 15px;
+}
+
+.keranjang h3:nth-of-type(2) {
+    color: #c45d7d;
+}
+
+.keranjang h3:nth-of-type(2) span {
+    color: #c45d7d;
+}
+
+.keranjang h3:nth-of-type(3) {
+    border-top: 2px dashed #e3d6cd;
+    padding-top: 15px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #b40296;
+}
+
+.keranjang h3:nth-of-type(3) span {
+    color: #c45d7d;
+}
+
+#checkout {
+    width: 100%;
+    margin-top: 15px;
+    background: #c45d7d;
+    padding: 14px;
+    font-weight: bold;
+}
+
+/* FORM */
+.form-pembeli {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    box-shadow: 0 8px 25px rgba(63, 53, 48, 0.08);
+}
+.form-pembeli h2 {
+    color: #b40296;}
+form input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 5px;
+    border: 1px solid #dfd2ca;
+    border-radius: 12px;
+    background: #fcf9f6;
+    outline: none;
+}
+form input:focus {
+    border-color: #c45d7d;}
+form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #76665e;
+}
+form button {
+    margin-top: 18px;
+    width: 100%;
+}
+#pesan {
+    margin-top: 15px;
+    color: #c45d7d;
+}
+/* RIWAYAT */
+.riwayat {
+    background: #b40296;
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    width: 42%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 8px 25px rgba(63, 53, 48, 0.15);
+}
+.riwayat h2 {
+    color: white;}
+.history-item {
+    background: #fffaf5;
+    color: #b40296;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    border-left: 5px solid #e6a6b8;
+}
+.history-item strong {
+    color: #c45d7d;}
+.history-item p {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #76665e;
+}
+footer {
+    background: #b40296;
+    color: #fce7ee;
+    padding: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
