@@ -4,10 +4,10 @@ $(document).ready(function () {
         { id: 1, nama: "Whiskas Salmon", harga: 7000, emoji: "🐟" },
         { id: 2, nama: "Royal Canin", harga: 75000, emoji: "🐈" },
         { id: 3, nama: "Me-O Tuna", harga: 8000, emoji: "🐠" },
-        { id: 4, nama: "Whiskas Pouch", harga: 9500, emoji: "🥫" },
-        { id: 5, nama: "Kit Cat Chicken", harga: 12000, emoji: "🍗" },
-        { id: 6, nama: "Fancy Feast", harga: 18000, emoji: "🍖" },
-        { id: 7, nama: "Ciao Churu", harga: 15000, emoji: "😺" },
+        { id: 4, nama: "Whiskas Kaleng", harga: 9500, emoji: "🥫" },
+        { id: 5, nama: "Fur Love Chicken Flavor", harga: 12000, emoji: "🍗" },
+        { id: 6, nama: "Pro Plan", harga: 18000, emoji: "🍖" },
+        { id: 7, nama: "Happy Cat Dry Food", harga: 15000, emoji: "😺" },
         { id: 8, nama: "Dental Treat", harga: 22000, emoji: "🦴" }
     ];
 
