@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimmy's Store - Makanan Kucing</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-wrap">
+            <a href="#beranda" class="logo">🐱 KIMMY'S Store</a>
+
+            <ul class="nav-list">
+                <li><a href="#beranda">Beranda</a></li>
+
+                <li class="dropdown">
+                    <button class="dropdown-btn" type="button">
+                        Produk ▾
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#produk">Makanan Kering</a></li>
+                        <li><a href="#produk">Makanan Basah</a></li>
+                        <li><a href="#produk">Paket Hemat</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#pesan">Pesan</a></li>
+                <li><a href="#member">Member</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BERANDA -->
+    <header id="beranda" class="hero">
+        <div class="container hero-content">
+            <div>
+                <p class="eyebrow">TEMAN MAKAN ANABUL KESAYANGANMU</p>
+
+                <h1>
+                    Makan Enak,<br>
+                    <span>Kucing Happy!</span>
+                </h1>
+
+                <p class="hero-text">
+                    Cari makanan kucing sehari-hari?
+                    Ada pilihan rasa dan ukuran yang bisa disesuaikan
+                    dengan kebutuhan si meong.
+                </p>
+
+                <a href="#produk" class="hero-btn">Lihat Produk</a>
+            </div>
+
+            <div class="hero-cat">🐈</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PRODUK -->
+        <section id="produk" class="container section">
+            <div class="section-heading">
+                <p class="eyebrow">PILIHAN BUAT SI MEONG</p>
+                <h2>Produk Pilihan</h2>
+                <p>Beberapa makanan yang bisa dipilih untuk kucing kesayangan.</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active" type="button"
+                    data-target="#tab-kering">
+                    Makanan Kering
+                </button>
+
+                <button class="tab" type="button"
+                    data-target="#tab-basah">
+                    Makanan Basah
+                </button>
+
+                <button class="tab" type="button"
+                    data-target="#tab-hemat">
+                    Paket Hemat
+                </button>
+            </div>
+
+            <!-- TAB MAKANAN KERING -->
+            <div id="tab-kering" class="tab-panel product-grid">
+
+                <article class="product-card">
+                    <div class="product-picture salmon">🐟</div>
+                    <p class="product-type">MAKANAN KERING</p>
+                    <h3>Whiskas Salmon</h3>
+                    <p>Pilihan makanan dengan rasa ikan salmon.</p>
+
+                    <div class="product-bottom">
+                        <span class="price">Rp7.000</span>
+                        <a href="#pesan" class="small-btn"
+                            data-product="Whiskas Salmon">Pilih</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-picture royal">🐱</div>
+                    <p class="product-type">MAKANAN KERING</p>
+                    <h3>Royal Canin</h3>
+                    <p>Pilihan makanan kucing untuk kebutuhan sehari-hari.</p>
+
+                    <div class="product-bottom">
+                        <span class="price">Rp75.000</span>
+                        <a href="#pesan" class="small-btn"
+                            data-product="Royal Canin">Pilih</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-picture tuna">🐠</div>
+                    <p class="product-type">MAKANAN KERING</p>
+                    <h3>Me-O Tuna</h3>
+                    <p>Varian tuna untuk pilihan menu si meong.</p>
+
+                    <div class="product-bottom">
+                        <span class="price">Rp8.000</span>
+                        <a href="#pesan" class="small-btn"
+                            data-product="Me-O Tuna">Pilih</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- TAB MAKANAN BASAH -->
+            <div id="tab-basah" class="tab-panel product-grid"
+                style="display:none">
+
+                <article class="product-card">
+                    <div class="product-picture tuna">🥫</div>
+                    <p class="product-type">MAKANAN BASAH</p>
+                    <h3>Wet Food Tuna</h3>
+                    <p>Makanan basah untuk variasi menu kucing.</p>
+
+                    <div class="product-bottom">
+                        <span class="price">Rp12.000</span>
+                        <a href="#pesan" class="small-btn"
+                            data-product="Wet Food Tuna">Pilih</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-picture salmon">🍗</div>
+                    <p class="product-type">MAKANAN BASAH</p>
+                    <h3>Wet Food Chicken</h3>
+                    <p>Varian ayam untuk pilihan makanan si meong.</p>
+
+                    <div class="product-bottom">
+                        <span class="price">Rp11.000</span>
+                        <a href="#pesan" class="small-btn"
+                            data-product="Wet Food Chicken">Pilih</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- TAB PAKET HEMAT -->
+            <div id="tab-hemat" class="tab-panel product-grid"
+                style="display:none">
+
+                <article class="product-card">
+                    <div class="product-picture royal">🎁</div>
+                    <p class="product-type">PAKET HEMAT</p>
+                    <h3>Paket Coba-Coba</h3>
+                    <p>Paket pilihan untuk mencoba beberapa produk.</p>
+
+                    <div class="product-bottom">
+                        <span class="price">Rp25.000</span>
+                        <a href="#pesan" class="small-btn"
+                            data-product="Paket Coba-Coba">Pilih</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-picture salmon">🛍️</div>
+                    <p class="product-type">PAKET HEMAT</p>
+                    <h3>Paket Stok Mingguan</h3>
+                    <p>Pilihan praktis untuk menyiapkan stok makanan.</p>
+
+                    <div class="product-bottom">
+                        <span class="price">Rp50.000</span>
+                        <a href="#pesan" class="small-btn"
+                            data-product="Paket Stok Mingguan">Pilih</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+       <!-- TENTANG KAMI -->
+        <section id="tentang" style="background:#fff;">
+            <div class="container" style="max-width: 700px; text-align: center;">
+                <h2>Tentang Kimmy's Store</h2>
+                <p>
+                    Kimmy's Store merupakan toko makanan kucing yang menyediakan
+                    berbagai pilihan makanan untuk kebutuhan sehari-hari si meong.
+                    Tersedia makanan kering, makanan basah, dan paket hemat yang
+                    bisa dipilih sesuai kebutuhan kucing kesayangan.
+                </p>
+            </div>
+        </section>
+        <!-- FORM PEMESANAN -->
+        <section id="pesan" class="container section">
+            <div class="section-heading">
+                <p class="eyebrow">MAU BELI APA?</p>
+                <h2>Form Pemesanan</h2>
+                <p>Isi data berikut untuk mencatat pesanan kamu.</p>
+            </div>
+
+            <form id="formPesan" class="form-box" novalidate>
+                <div class="form-group">
+                    <label for="namaPesan">Nama pembeli</label>
+                    <input type="text" id="namaPesan"
+                        placeholder="Masukkan nama kamu">
+                    <div class="hint">Nama digunakan untuk mencatat pesanan.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pilihProduk">Pilih produk</label>
+                    <select id="pilihProduk">
+                        <option value="">-- Pilih produk --</option>
+                        <option>Whiskas Salmon</option>
+                        <option>Royal Canin</option>
+                        <option>Me-O Tuna</option>
+                        <option>Wet Food Tuna</option>
+                        <option>Wet Food Chicken</option>
+                        <option>Paket Coba-Coba</option>
+                        <option>Paket Stok Mingguan</option>
+                    </select>
+                    <div class="hint">Pilih produk yang ingin dipesan.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah">Jumlah produk</label>
+                    <input type="number" id="jumlah"
+                        min="1" max="50" placeholder="Contoh: 2">
+                </div>
+
+                <button type="submit" class="btn">Kirim Pesanan</button>
+            </form>
+        </section>
+
+        <!-- FORM PENDAFTARAN MEMBER -->
+        <section id="member" class="member-section">
+            <div class="container section">
+                <div class="section-heading">
+                    <p class="eyebrow">BIAR GAMPANG PESAN LAGI</p>
+                    <h2>Daftar Member</h2>
+                    <p>Isi semua data dengan benar untuk mendaftar.</p>
+                </div>
+
+                <form id="formMember" class="form-box">
+                    <div class="form-group">
+                        <label for="mNama">Nama lengkap</label>
+                        <input type="text" id="mNama" name="nama"
+                            placeholder="Nama lengkap">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mEmail">Email aktif</label>
+                        <input type="email" id="mEmail" name="email"
+                            placeholder="nama@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mHp">Nomor HP</label>
+                        <input type="text" id="mHp" name="hp"
+                            placeholder="10-12 digit angka">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mAlamat">Alamat</label>
+                        <input type="text" id="mAlamat" name="alamat"
+                            placeholder="Alamat tempat tinggal">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mUsia">Usia</label>
+                        <input type="number" id="mUsia" name="usia"
+                            placeholder="Minimal 17 tahun">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mPassword">Password</label>
+                        <input type="password" id="mPassword" name="password"
+                            placeholder="Minimal 8 karakter, huruf dan angka">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mKonfirmasi">Konfirmasi password</label>
+                        <input type="password" id="mKonfirmasi"
+                            name="konfirmasi" placeholder="Ulangi password">
+                    </div>
+
+                    <button type="submit" class="btn">Daftar Member</button>
+
+                    <div class="sukses" id="sukses">
+                        <strong>Pendaftaran berhasil!</strong>
+                        Terima kasih sudah bergabung dengan Kimmy's Store.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kimmy's Store | Praktikum Pemrograman Web</p>
+    </footer>
+
+    <div id="toast" role="status"></div>
+    <button id="backToTop" type="button" aria-label="Kembali ke atas">
+        ↑
+    </button>
+
+</body>
+</html>
