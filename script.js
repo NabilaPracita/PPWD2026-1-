@@ -15,8 +15,7 @@ tombolTema.addEventListener("click", function () {
     }
 });
 
-
-// ===== 2. Pencarian Proyek =====
+// === 2. Pencarian Proyek ====
 
 const kotakCari = document.getElementById("cari");
 const semuaKartu = document.querySelectorAll(".kartu");
