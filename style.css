@@ -1,9 +1,9 @@
 /* ===== 1. Warna ===== Variabel CSS: ubah warna cukup di sini saja. */
 :root {
-  --latar: #ffffff;
-  --kartu: #ffffff;
+  --latar: #fffba9;
+  --kartu: #fffba9;
   --teks: #09c4f3;
-  --teks-pudar: hsl(62, 100%, 49%);
+  --teks-pudar: hsl(199, 100%, 49%);
   --aksen: hsl(188, 100%, 49%);
 } /* Saat body diberi class "gelap" oleh JavaScript, warna berganti */
 body.gelap {
@@ -84,8 +84,7 @@ body {
   transition: transform 0.2s;
 }
 .kartu:hover {
-  transform: translateY(-4px);
-}
+  transform: translateY(-4px);}
 .kartu h3 {
   margin: 0 0 6px;
   color: var(--aksen);
