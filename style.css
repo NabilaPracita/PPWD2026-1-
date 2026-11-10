@@ -3,8 +3,8 @@
   --latar: #ffffff;
   --kartu: #ffffff;
   --teks: #09c4f3;
-  --teks-pudar: hsl(291, 99%, 65%);
-  --aksen: hsl(57, 100%, 50%);
+  --teks-pudar: hsl(62, 100%, 49%);
+  --aksen: hsl(188, 100%, 49%);
 } /* Saat body diberi class "gelap" oleh JavaScript, warna berganti */
 body.gelap {
   --latar: #121a18;
